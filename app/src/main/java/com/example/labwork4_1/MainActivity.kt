@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
 
             adapter.submitList(list.toList())
         }
-        binding.buttonClear.setOnClickListener {
+        binding.buttonRemove.setOnClickListener {
             if (list.isNotEmpty()) {
                 list.removeLast()
                 adapter.submitList(list.toList())
